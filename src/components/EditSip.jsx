@@ -3,6 +3,12 @@ import useOutsideListener from "./OutsideListner";
 import Lottie from "lottie-react";
 import confirmed from "../anims/confirm.json";
 import denied from "../anims/denied.json";
+import PropTypes from "prop-types";
+
+EditSip.propTypes = {
+  closePopup: PropTypes.func,
+  sipId: PropTypes.number,
+};
 
 function EditSip({ closePopup, sipId }) {
   const [disallow, setDisallow] = useState("");
